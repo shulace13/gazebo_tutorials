@@ -5,35 +5,46 @@
       <!-- The body of the robot and the caster-->
       <link name='chassis'>
         <!-- Inserting the body here -->
-        <pose>0 0 .1 0 0 0</pose>   <!-- The geometry origin -->
+        <pose>0 0 .25 0 0 0</pose>   <!-- The geometry origin -->
+        <inertial>
+          <mass>20.0</mass>
+          <pose>-0.1 0 -0.1 0 0 0</pose>
+          <inertia>
+            <ixx>0.5</ixx>
+            <iyy>1.0</iyy>
+            <izz>0.1</izz>
+          </inertia>
+        </inertial>
         <collision name='collision'>
           <geometry>
             <box>
-              <size>.4 .2 .1</size>
+              <size>2 1 0.3</size>
             </box>
           </geometry>
         </collision>
         <visual name='visual'>
-          <pose>0 0 0.05 0 0 0</pose>
+          <!-- <pose>0 0 0.05 0 0 0</pose> This was for the mesh thing-->
           <geometry>
-            <!-- <box>
-              <size>.4 .2 .1</size>
-            </box> -->
+            <box>
+              <size>2 1 0.3</size>
+            </box>
+            <!--
             <mesh>
               <uri>model://pioneer2dx/meshes/chassis.dae</uri>
               <scale>0.9 0.5 0.5</scale>
             </mesh>
+            -->
           </geometry>
         </visual>
       </link>
 
       <!-- Inserting the front left wheel -->           
       <link name='front_left_wheel'>
-        <pose>0.15 0.13 0.1 0 1.5707 1.5707</pose>
+        <pose>0.8 0.6 0.125 0 1.5707 1.5707</pose>
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -41,7 +52,7 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -50,11 +61,11 @@
 
       <!-- Inserting the front right wheel -->           
       <link name='front_right_wheel'>
-        <pose>0.15 -0.13 0.1 0 1.5707 1.5707</pose>
+        <pose>0.8 -0.6 0.125 0 1.5707 1.5707</pose>
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -62,7 +73,7 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -71,11 +82,11 @@
       
       <!-- Inserting the rear left wheel -->           
       <link name='rear_left_wheel'>
-        <pose>-0.15 0.13 0.1 0 1.5707 1.5707</pose>
+        <pose>-0.8 0.6 0.125 0 1.5707 1.5707</pose>
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -83,7 +94,7 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -92,11 +103,11 @@
 
       <!-- Inserting the rear right wheel -->           
       <link name='rear_right_wheel'>
-        <pose>-0.15 -0.13 0.1 0 1.5707 1.5707</pose>
+        <pose>-0.8 -0.6 0.125 0 1.5707 1.5707</pose>
         <collision name='collision'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
@@ -104,7 +115,7 @@
         <visual name='visual'>
           <geometry>
             <cylinder>
-              <radius>0.1</radius>
+              <radius>0.125</radius>
               <length>0.05</length>
             </cylinder>
           </geometry>
