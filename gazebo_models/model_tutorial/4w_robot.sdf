@@ -1,0 +1,147 @@
+<?xml version='1.0'?>
+<sdf version="1.5">
+  <model name="robot_tutorial">
+    <static>true</static>
+      <!-- The body of the robot and the caster-->
+      <link name='chassis'>
+        <!-- Inserting the body here -->
+        <pose>0 0 .1 0 0 0</pose>   <!-- The geometry origin -->
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>.4 .2 .1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>.4 .2 .1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Inserting the front left wheel -->           
+      <link name='front_left_wheel'>
+        <pose>0.15 0.13 0.1 0 1.5707 1.5707</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Inserting the front right wheel -->           
+      <link name='front_right_wheel'>
+        <pose>0.15 -0.13 0.1 0 1.5707 1.5707</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+      
+      <!-- Inserting the rear left wheel -->           
+      <link name='rear_left_wheel'>
+        <pose>-0.15 0.13 0.1 0 1.5707 1.5707</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Inserting the rear right wheel -->           
+      <link name='rear_right_wheel'>
+        <pose>-0.15 -0.13 0.1 0 1.5707 1.5707</pose>
+        <collision name='collision'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <cylinder>
+              <radius>0.1</radius>
+              <length>0.05</length>
+            </cylinder>
+          </geometry>
+        </visual>
+      </link>
+
+      <!-- Connecting each wheel to the chassis -->
+      <joint type='revolute' name='f_left_wheel_hinge'>
+        <pose>0 0 -0.03 0 0 0</pose>
+        <child>front_left_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+      </joint>
+
+      <joint type='revolute' name='f_right_wheel_hinge'>
+        <pose>0 0 0.03 0 0 0</pose>
+        <child>front_right_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+      </joint>
+
+      <joint type='revolute' name='r_left_wheel_hinge'>
+        <pose>0 0 -0.03 0 0 0</pose>
+        <child>rear_left_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+      </joint>
+
+      <joint type='revolute' name='r_right_wheel_hinge'>
+        <pose>0 0 0.03 0 0 0</pose>
+        <child>rear_right_wheel</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+      </joint>
+
+  </model>
+</sdf>
