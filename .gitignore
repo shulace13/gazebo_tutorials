@@ -1,2 +1,7 @@
 # Ignore the folder named 'gazebo_frames'
 gazebo_frames/
+
+# Ignore the floder named gazebo_models
+# you can get your own by
+# hg clone https://bitbucket.org/osrf/gazebo_models
+gazebo_models/
