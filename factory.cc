@@ -10,7 +10,7 @@ namespace gazebo{
             // The filemname must be in the GAZEBO_MODEL_PATH environment variable
             _parent->InsertModelFile("model://box");
 
-/*
+
             // Option 2: Insert model from string via function call.
             // Insert a sphere model from string
             sdf::SDF sphereSDF;
@@ -67,7 +67,7 @@ namespace gazebo{
                 // Send the message
                 factoryPub->Publish(msg);
             }
-*/
+
         }
     };
     

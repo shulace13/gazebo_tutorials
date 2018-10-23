@@ -124,6 +124,19 @@ hello_world/fast:
 .PHONY : hello_world/fast
 
 #=============================================================================
+# Target rules for targets named model_push
+
+# Build rule for target.
+model_push: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 model_push
+.PHONY : model_push
+
+# fast build rule for target.
+model_push/fast:
+	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
+.PHONY : model_push/fast
+
+#=============================================================================
 # Target rules for targets named factory
 
 # Build rule for target.
@@ -137,17 +150,17 @@ factory/fast:
 .PHONY : factory/fast
 
 #=============================================================================
-# Target rules for targets named model_push
+# Target rules for targets named world_edit
 
 # Build rule for target.
-model_push: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 model_push
-.PHONY : model_push
+world_edit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 world_edit
+.PHONY : world_edit
 
 # fast build rule for target.
-model_push/fast:
-	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/build
-.PHONY : model_push/fast
+world_edit/fast:
+	$(MAKE) -f CMakeFiles/world_edit.dir/build.make CMakeFiles/world_edit.dir/build
+.PHONY : world_edit/fast
 
 factory.o: factory.cc.o
 
@@ -230,6 +243,33 @@ model_push.cc.s:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/model_push.cc.s
 .PHONY : model_push.cc.s
 
+world_edit.o: world_edit.cc.o
+
+.PHONY : world_edit.o
+
+# target to build an object file
+world_edit.cc.o:
+	$(MAKE) -f CMakeFiles/world_edit.dir/build.make CMakeFiles/world_edit.dir/world_edit.cc.o
+.PHONY : world_edit.cc.o
+
+world_edit.i: world_edit.cc.i
+
+.PHONY : world_edit.i
+
+# target to preprocess a source file
+world_edit.cc.i:
+	$(MAKE) -f CMakeFiles/world_edit.dir/build.make CMakeFiles/world_edit.dir/world_edit.cc.i
+.PHONY : world_edit.cc.i
+
+world_edit.s: world_edit.cc.s
+
+.PHONY : world_edit.s
+
+# target to generate assembly for a file
+world_edit.cc.s:
+	$(MAKE) -f CMakeFiles/world_edit.dir/build.make CMakeFiles/world_edit.dir/world_edit.cc.s
+.PHONY : world_edit.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,9 +278,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... hello_world"
-	@echo "... factory"
-	@echo "... model_push"
 	@echo "... rebuild_cache"
+	@echo "... model_push"
+	@echo "... factory"
+	@echo "... world_edit"
 	@echo "... factory.o"
 	@echo "... factory.i"
 	@echo "... factory.s"
@@ -250,6 +291,9 @@ help:
 	@echo "... model_push.o"
 	@echo "... model_push.i"
 	@echo "... model_push.s"
+	@echo "... world_edit.o"
+	@echo "... world_edit.i"
+	@echo "... world_edit.s"
 .PHONY : help
 
 
