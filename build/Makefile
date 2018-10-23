@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named system_gui
+
+# Build rule for target.
+system_gui: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 system_gui
+.PHONY : system_gui
+
+# fast build rule for target.
+system_gui/fast:
+	$(MAKE) -f CMakeFiles/system_gui.dir/build.make CMakeFiles/system_gui.dir/build
+.PHONY : system_gui/fast
+
+#=============================================================================
 # Target rules for targets named hello_world
 
 # Build rule for target.
@@ -243,6 +256,33 @@ model_push.cc.s:
 	$(MAKE) -f CMakeFiles/model_push.dir/build.make CMakeFiles/model_push.dir/model_push.cc.s
 .PHONY : model_push.cc.s
 
+system_gui.o: system_gui.cc.o
+
+.PHONY : system_gui.o
+
+# target to build an object file
+system_gui.cc.o:
+	$(MAKE) -f CMakeFiles/system_gui.dir/build.make CMakeFiles/system_gui.dir/system_gui.cc.o
+.PHONY : system_gui.cc.o
+
+system_gui.i: system_gui.cc.i
+
+.PHONY : system_gui.i
+
+# target to preprocess a source file
+system_gui.cc.i:
+	$(MAKE) -f CMakeFiles/system_gui.dir/build.make CMakeFiles/system_gui.dir/system_gui.cc.i
+.PHONY : system_gui.cc.i
+
+system_gui.s: system_gui.cc.s
+
+.PHONY : system_gui.s
+
+# target to generate assembly for a file
+system_gui.cc.s:
+	$(MAKE) -f CMakeFiles/system_gui.dir/build.make CMakeFiles/system_gui.dir/system_gui.cc.s
+.PHONY : system_gui.cc.s
+
 world_edit.o: world_edit.cc.o
 
 .PHONY : world_edit.o
@@ -276,6 +316,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... system_gui"
 	@echo "... edit_cache"
 	@echo "... hello_world"
 	@echo "... rebuild_cache"
@@ -291,6 +332,9 @@ help:
 	@echo "... model_push.o"
 	@echo "... model_push.i"
 	@echo "... model_push.s"
+	@echo "... system_gui.o"
+	@echo "... system_gui.i"
+	@echo "... system_gui.s"
 	@echo "... world_edit.o"
 	@echo "... world_edit.i"
 	@echo "... world_edit.s"

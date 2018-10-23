@@ -1,3 +1,4 @@
+/home/shu18/gazebo_plugin_tutorial/build/CMakeFiles/system_gui.dir
 /home/shu18/gazebo_plugin_tutorial/build/CMakeFiles/edit_cache.dir
 /home/shu18/gazebo_plugin_tutorial/build/CMakeFiles/hello_world.dir
 /home/shu18/gazebo_plugin_tutorial/build/CMakeFiles/rebuild_cache.dir

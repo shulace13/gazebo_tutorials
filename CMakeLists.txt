@@ -16,3 +16,6 @@ target_link_libraries(factory ${GAZEBO_LIBRARIES})
 
 add_library(world_edit SHARED world_edit.cc)
 target_link_libraries(world_edit ${GAZEBO_LIBRARIES})
+   
+add_library(system_gui SHARED system_gui.cc)
+target_link_libraries(system_gui ${GAZEBO_LIBRARIES})
