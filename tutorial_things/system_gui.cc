@@ -38,7 +38,7 @@ namespace gazebo{
                 this->userCam->EnableSaveFrame(true);
                 
                 // Specify the path to save frames into
-                this->userCam->SetSaveFramePathname("/home/shu18/gazebo_plugin_tutorial/gazebo_frames");
+                this->userCam->SetSaveFramePathname("/home/shu18/gazebo_tutorial/gazebo_frames");
             }
             
             // Get scene pointer
