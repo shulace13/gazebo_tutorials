@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shu18/gazebo_plugin_tutorial/model_push.cc" "/home/shu18/gazebo_plugin_tutorial/build/CMakeFiles/model_push.dir/model_push.cc.o"
+  "/home/shu18/gazebo_tutorial/model_push.cc" "/home/shu18/gazebo_tutorial/build/CMakeFiles/model_push.dir/model_push.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

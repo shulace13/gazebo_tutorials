@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/shu18/gazebo_plugin_tutorial/factory.cc
+/home/shu18/gazebo_tutorial/factory.cc
 ignition/math/Pose3.hh
 -
 gazebo/physics/physics.hh

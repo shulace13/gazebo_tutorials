@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/shu18/gazebo_plugin_tutorial/model_push.cc
+/home/shu18/gazebo_tutorial/model_push.cc
 functional
 -
 gazebo/gazebo.hh

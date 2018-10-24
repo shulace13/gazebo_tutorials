@@ -127,7 +127,7 @@
       <include>
         <!-- <uri>model://hokuyo</uri> -->
         <uri>model://camera</uri>
-        <pose>0.2 0 0.2 0 0 0</pose>
+        <pose>0.2 0 0.5 0 0 0</pose>
       </include>
       <joint name='hokuyo_joint' type='fixed'>
         <child>hokuyo::link</child>

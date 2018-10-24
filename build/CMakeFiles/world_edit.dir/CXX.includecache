@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/shu18/gazebo_plugin_tutorial/world_edit.cc
+/home/shu18/gazebo_tutorial/world_edit.cc
 sdf/sdf.hh
 -
 ignition/math/Pose3.hh
 -
 gazebo/gazebo.hh
-/home/shu18/gazebo_plugin_tutorial/gazebo/gazebo.hh
+/home/shu18/gazebo_tutorial/gazebo/gazebo.hh
 gazebo/common/Plugin.hh
-/home/shu18/gazebo_plugin_tutorial/gazebo/common/Plugin.hh
+/home/shu18/gazebo_tutorial/gazebo/common/Plugin.hh
 gazebo/msgs/msgs.hh
-/home/shu18/gazebo_plugin_tutorial/gazebo/msgs/msgs.hh
+/home/shu18/gazebo_tutorial/gazebo/msgs/msgs.hh
 gazebo/physics/physics.hh
-/home/shu18/gazebo_plugin_tutorial/gazebo/physics/physics.hh
+/home/shu18/gazebo_tutorial/gazebo/physics/physics.hh
 gazebo/transport/transport.hh
-/home/shu18/gazebo_plugin_tutorial/gazebo/transport/transport.hh
+/home/shu18/gazebo_tutorial/gazebo/transport/transport.hh
 
 /usr/include/gazebo-7/gazebo/Master.hh
 string
