@@ -1,0 +1,7 @@
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/system_gui.dir
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/edit_cache.dir
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/hello_world.dir
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/rebuild_cache.dir
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/model_push.dir
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/factory.dir
+/home/shu18/gazebo_tutorial/tutorial_things/build/CMakeFiles/world_edit.dir
