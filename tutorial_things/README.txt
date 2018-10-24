@@ -17,9 +17,15 @@ Model Push
  You should see a box and when you press play on the bottom of the window
  That should move.
 
-System GUI
-
 World Edit
  This world has a reverse gravity. Anything you put in this world will go up.
  $ gazebo world_edit.world
 
+System GUI
+ This captures the screen and saves it at the directory where you want it to
+ Execute the following
+ $ gzserver &
+ $ gzclient -g libsystem_gui.so
+ In this case, we are executing the gzserver in the background 
+ but you can run it in another terminal.
+ 
